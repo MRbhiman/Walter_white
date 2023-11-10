@@ -12,7 +12,7 @@ logger.setLevel(logging.ERROR)
 async def addconnection(client, message):
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"Nᴇɴɢᴀ Aᴅᴅʀᴇss Iʟʟᴀ Tʜᴀ Aᴅᴍɪɴ 🤣 Use /connect {message.chat.id} in PM")
+        return await message.reply(f"you Aᴅᴍɪɴ 🤣 Use /connect {message.chat.id} in PM")
     chat_type = message.chat.type
 
     if chat_type == enums.ChatType.PRIVATE:
@@ -22,7 +22,7 @@ async def addconnection(client, message):
             await message.reply_text(
                 "<b>Enter in correct format!</b>\n\n"
                 "<code>/connect groupid</code>\n\n"
-                "<i>Yᴇɴɴᴀ Uɴɢᴀ Gʀᴏᴜᴘ Lᴀ Aᴅᴅ Pᴀɴɴɪ Gʀᴏᴜᴘ Iᴅ Yᴇᴅᴜᴛʜᴜᴋᴏɴɢᴀ  <code>/id</code></i>",
+                "<i>അതിനു ഞാൻ നിങ്ങളുടെ ഗ്രൂപ്പിൽ ഉണ്ടോ... 🤔!!  <code>/id</code></i>",
                 quote=True
             )
             return
@@ -37,7 +37,7 @@ async def addconnection(client, message):
                 and st.status != enums.ChatMemberStatus.OWNER
                 and userid not in ADMINS
         ):
-            await message.reply_text("Uɴɢᴀ Gʀᴏᴜᴘ Yᴇɴɴᴀ Kᴀɴᴅɪᴘᴀ Aᴅᴍɪɴ Aᴋᴀɴᴜᴍ", quote=True)
+            await message.reply_text("അതിനു ഞാൻ നിങ്ങളുടെ ഗ്രൂപ്പിൽ ഉണ്ടോ... 🤔!!", quote=True)
             return
     except Exception as e:
         logger.exception(e)
@@ -68,14 +68,14 @@ async def addconnection(client, message):
                     )
             else:
                 await message.reply_text(
-                    "Nᴀ Aʟʀᴇᴀᴅʏ Iɴᴛʜᴀ Gʀᴏᴜᴘ Lᴀ Jᴏɪɴ Pᴀɴɴɪᴛᴇɴ",
+                    "am Aʟʀᴇᴀᴅʏ in it...🎉",
                     quote=True
                 )
         else:
-            await message.reply_text("Iɴᴛʜᴀ Gʀᴏᴜᴘ Lᴀ Eɴɴᴀ Aᴅᴍɪɴ Aᴋᴜɴɢᴀ", quote=True)
+            await message.reply_text("അതിനു ഞാൻ നിങ്ങളുടെ ഗ്രൂപ്പിൽ ഉണ്ടോ... 🤔!!", quote=True)
     except Exception as e:
         logger.exception(e)
-        await message.reply_text('Eᴛʜᴏ Pʀᴏʙʟᴇᴍ Tʜɪʀᴜᴍʙɪ Tʀʏ Pᴀɴɴᴜɴɢᴀ', quote=True)
+        await message.reply_text('something wrong try again', quote=True)
         return
 
 
@@ -87,7 +87,7 @@ async def deleteconnection(client, message):
     chat_type = message.chat.type
 
     if chat_type == enums.ChatType.PRIVATE:
-        await message.reply_text("Run /connections Tᴏ Nᴀ EɴTʜᴀ EɴTʜᴀ Gʀᴏᴜᴘ Lᴀ Eʀᴜᴋᴇɴ Nᴜ Pᴀʀᴜɴɢᴀ!", quote=True)
+        await message.reply_text("Run /connections Tᴏ അതിനു ഞാൻ നിങ്ങളുടെ ഗ്രൂപ്പിൽ ഉണ്ടോ... 🤔!", quote=True)
 
     elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         group_id = message.chat.id
@@ -102,9 +102,9 @@ async def deleteconnection(client, message):
 
         delcon = await delete_connection(str(userid), str(group_id))
         if delcon:
-            await message.reply_text("SᴜᴄᴄᴇssFᴜʟʟʏ Iɴᴛʜᴀ Gʀᴏᴜᴘ Vɪᴛᴛᴜ Vᴇʟɪʏᴀ Pᴏɪᴛᴇɴ", quote=True)
+            await message.reply_text("SᴜᴄᴄᴇssFᴜʟʟʏ Iɴᴛʜᴀ Gʀᴏᴜᴘ get out", quote=True)
         else:
-            await message.reply_text("Nᴀ Iɴᴜᴍ Iɴᴛʜᴀ Gʀᴏᴜᴘ Lᴀ Cᴏɴɴᴇᴄᴛ Aɢᴀʟᴀ\nDo /connect to connect.", quote=True)
+            await message.reply_text("i didt Cᴏɴɴᴇᴄᴛ yet\nDo /connect to connect.", quote=True)
 
 
 @Client.on_message(filters.private & filters.command(["connections"]))
@@ -114,7 +114,7 @@ async def connections(client, message):
     groupids = await all_connections(str(userid))
     if groupids is None:
         await message.reply_text(
-            "Eɴᴛʜᴀ Gʀᴏᴜᴘ Lᴀʏᴜᴍ Nᴀ Iʟʟᴀ Fɪʀsᴛ Aᴅᴅ Pᴀɴɴᴜɴɢᴀ",
+            "അതിനു ഞാൻ നിങ്ങളുടെ ഗ്രൂപ്പിൽ ഉണ്ടോ... 🤔!!",
             quote=True
         )
         return
@@ -142,6 +142,6 @@ async def connections(client, message):
         )
     else:
         await message.reply_text(
-            "Eɴᴛʜᴀ Gʀᴏᴜᴘ Lᴀʏᴜᴍ Nᴀ Iʟʟᴀ Fɪʀsᴛ Aᴅᴅ Pᴀɴɴᴜɴɢᴀ.",
+            "അതിനു ഞാൻ നിങ്ങളുടെ ഗ്രൂപ്പിൽ ഉണ്ടോ... 🤔!!",
             quote=True
         )
