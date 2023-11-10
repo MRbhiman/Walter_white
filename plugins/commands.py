@@ -23,10 +23,10 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('🤖 Uᴘᴅᴀᴛᴇs', url='https://t.me/Tamilan_BotsZ')
+                InlineKeyboardButton('Walter🎩White', url='https://t.me/mrbhiman44')
             ],
             [
-                InlineKeyboardButton('ℹ️ Hᴇʟᴘ', url=f"https://t.me/{temp.U_NAME}?start=help"),
+                InlineKeyboardButton('Jesse💰Pinkman', url=f"https://t.me/Haker8000"),
             ]
             ]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -45,10 +45,8 @@ async def start(client, message):
             InlineKeyboardButton('➕ Aᴅᴅ Mᴇ Tᴏ Uʀ Gʀᴏᴜᴘs ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Uᴘᴅᴀᴛᴇs', url='https://t.me/Tamilan_BotsZ')
+            InlineKeyboardButton('Walter🎩White', url='https://t.me/mrbhiman44')
             ],[
-            InlineKeyboardButton('ℹ️ Hᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('👩‍💻 Rᴇᴘᴏ', url='https://Github.Com/TamilanBotsZ/AwesomeFilter'),
             InlineKeyboardButton('😊 Aʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -63,7 +61,7 @@ async def start(client, message):
         try:
             invite_link = await client.create_chat_invite_link(int(AUTH_CHANNEL))
         except ChatAdminRequired:
-            logger.error("Nᴀ FᴏʀᴄᴇSᴜʙ Cʜᴀɴɴᴇʟ Lᴀ Aᴅᴍɪɴ Aʜ Eʀᴜᴋᴇɴ Nᴀɴᴜ Cʜᴇᴄᴋ Pᴀɴɴɪᴋᴏɴɢᴀ")
+            logger.error("അതിനു ഞാൻ നിങ്ങളുടെ ഗ്രൂപ്പിൽ ഉണ്ടോ... 🤔")
             return
         btn = [
             [
@@ -82,7 +80,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton(" 🔄 Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Yᴇɴɴᴏᴅᴀ Uᴘᴅᴀᴛᴇs CʜᴀɴɴᴇʟA Jᴏɪɴ Pᴀɴɴᴀ Tʜᴀ Yᴇɴɴᴀ Usᴇ Pᴀɴɴᴀ Mᴜᴅɪʏᴜᴍ**",
+            text="**Update channel ഇൽ Join ചെയ്യ് 1st എന്നിട്ട് try again കൊടുത്ത് നോക്കു...❤️**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
@@ -92,10 +90,8 @@ async def start(client, message):
             InlineKeyboardButton('➕ Aᴅᴅ Mᴇ Tᴏ Uʀ Gʀᴏᴜᴘs ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Uᴘᴅᴀᴛᴇs', url='https://t.me/Tamilan_BotsZ')
+            InlineKeyboardButton('Walter🎩White', url='https://t.me/mrbhiman44')
             ],[
-            InlineKeyboardButton('ℹ️ Hᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('👩‍💻 Rᴇᴘᴏ', url='https://Github.Com/TamilanBotsZ/AwesomeFilter'),
             InlineKeyboardButton('😊 Aʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -229,7 +225,7 @@ async def start(client, message):
             return
         except:
             pass
-        return await message.reply('Fɪʟᴇs Kᴀɴᴀᴘᴏᴄʜɪ 😬')
+        return await message.reply('Fɪʟᴇs കാണാനില 😬')
     files = files_[0]
     title = files.file_name
     size=get_size(files.file_size)
@@ -294,7 +290,7 @@ async def delete(bot, message):
     """Delete file from database"""
     reply = message.reply_to_message
     if reply and reply.media:
-        msg = await message.reply("Wᴀɪᴛ Pᴀɴɴᴜɴɢᴀ...⏳", quote=True)
+        msg = await message.reply("Wᴀɪᴛ...⏳", quote=True)
     else:
         await message.reply('Reply to file with /delete which you want to delete', quote=True)
         return
@@ -362,7 +358,7 @@ async def delete_all_index(bot, message):
 @Client.on_callback_query(filters.regex(r'^autofilter_delete'))
 async def delete_all_index_confirm(bot, message):
     await Media.collection.drop()
-    await message.answer('Tʜᴇᴛᴇʀ & Oᴛᴛ Kᴜ Kᴀsᴜ Iʟʟᴀʏᴀ 💌 Pᴀʀᴀᴠᴀʟʟᴀ Nᴀ Iʀᴜᴋᴇɴ')
+    await message.answer('Theter & ott യിൽ കൊടുക്കാൻ പൈസ ഇല്ലെ....Thats why am here..❤️')
     await message.message.edit('Succesfully Deleted All The Indexed Files.')
 
 
@@ -370,7 +366,7 @@ async def delete_all_index_confirm(bot, message):
 async def settings(client, message):
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"Nᴇɴɢᴀ Aᴅᴅʀᴇss IʟʟᴀTʜᴀ Aᴅᴍɪɴ 🤣. Use /connect {message.chat.id} in PM")
+        return await message.reply(f"you Aᴅᴍɪɴ 🤣. Use /connect {message.chat.id} in PM")
     chat_type = message.chat.type
 
     if chat_type == enums.ChatType.PRIVATE:
@@ -381,10 +377,10 @@ async def settings(client, message):
                 chat = await client.get_chat(grpid)
                 title = chat.title
             except:
-                await message.reply_text("Nᴀ Uɴɢᴀ Gʀᴏᴜᴘ Lᴀ Eʀᴜᴋᴇɴ Nᴀɴᴜ Cʜᴇᴄᴋ Pᴀɴɴᴜɴɢᴀ!!", quote=True)
+                await message.reply_text("അതിനു ഞാൻ നിങ്ങളുടെ ഗ്രൂപ്പിൽ ഉണ്ടോ... 🤔!!", quote=True)
                 return
         else:
-            await message.reply_text("Nᴀ Iɴɴᴜᴍ Eɴᴛʜᴀ Gʀᴏᴜᴘ Lᴀʏᴜᴍ Aᴅᴅ Pᴀɴɴᴀʟᴀ!", quote=True)
+            await message.reply_text("അതിനു ഞാൻ നിങ്ങളുടെ ഗ്രൂപ്പിൽ ഉണ്ടോ... 🤔!", quote=True)
             return
 
     elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
@@ -485,7 +481,7 @@ async def save_template(client, message):
     sts = await message.reply("Checking template")
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"Nᴇɴɢᴀ Aᴅᴅʀᴇss IʟʟᴀTʜᴀ Aᴅᴍɪɴ 🤣. Use /connect {message.chat.id} in PM")
+        return await message.reply(f"you Aᴅᴍɪɴ 🤣. Use /connect {message.chat.id} in PM")
     chat_type = message.chat.type
 
     if chat_type == enums.ChatType.PRIVATE:
@@ -496,10 +492,10 @@ async def save_template(client, message):
                 chat = await client.get_chat(grpid)
                 title = chat.title
             except:
-                await message.reply_text("Nᴀ Uɴɢᴀ Gʀᴏᴜᴘ Lᴀ Eʀᴜᴋᴇɴ Nᴀɴᴜ Cʜᴇᴄᴋ Pᴀɴɴᴜɴɢᴀ!!", quote=True)
+                await message.reply_text("അതിനു ഞാൻ നിങ്ങളുടെ ഗ്രൂപ്പിൽ ഉണ്ടോ... 🤔!!", quote=True)
                 return
         else:
-            await message.reply_text("Nᴀ Iɴɴᴜᴍ Eɴᴛʜᴀ Gʀᴏᴜᴘ Lᴀʏᴜᴍ Aᴅᴅ Pᴀɴɴᴀʟᴀ!", quote=True)
+            await message.reply_text("അതിനു ഞാൻ നിങ്ങളുടെ ഗ്രൂപ്പിൽ ഉണ്ടോ... 🤔!", quote=True)
             return
 
     elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
