@@ -31,7 +31,7 @@ async def index_files(bot, query):
         return await query.answer('Wait until previous process complete.', show_alert=True)
     msg = query.message
 
-    await query.answer("Wᴀɪᴛ Pᴀɴɴᴜɴɢᴀ...⏳", show_alert=True)
+    await query.answer("Wᴀɪᴛ...⏳", show_alert=True)
     if int(from_user) not in ADMINS:
         await bot.send_message(int(from_user),
                                f'Yᴏᴜʀ Sᴜʙᴍɪssɪᴏɴ ғᴏʀ ɪɴᴅᴇxɪɴɢ {ᴄʜᴀᴛ} ʜᴀs ʙᴇᴇɴ ᴀᴄᴄᴇᴘᴛᴇᴅ ʙʏ ᴏᴜʀ ᴍᴏᴅᴇʀᴀᴛᴏʀs ᴀɴᴅ ᴡɪʟʟ ʙᴇ ᴀᴅᴅᴇᴅ sᴏᴏɴ.',
@@ -77,7 +77,7 @@ async def send_for_index(bot, message):
     try:
         k = await bot.get_messages(chat_id, last_msg_id)
     except:
-        return await message.reply('Nᴀ Aɴᴛʜᴀ Pʀɪᴠᴀᴛᴇ Cʜᴀɴɴᴇʟᴀ Aᴅᴍɪɴ Aʜ Eʀᴜᴋᴇɴ ɴᴀɴᴜ Cʜᴇᴄᴋ Pᴀɴɴᴜɴɢᴀ')
+        return await message.reply('അതിനു ഞാൻ നിങ്ങളുടെ ഗ്രൂപ്പിൽ ഉണ്ടോ... 🤔!!')
     if k.empty:
         return await message.reply('This may be group and iam not a admin of the group.')
 
@@ -100,7 +100,7 @@ async def send_for_index(bot, message):
         try:
             link = (await bot.create_chat_invite_link(chat_id)).invite_link
         except ChatAdminRequired:
-            return await message.reply('Nᴀ Aɴᴛʜᴀ Cʜᴀᴛ Lᴀ Aᴅᴍɪɴ Aʜ Eʀᴜᴋᴇɴ ɴᴀɴᴜ Cʜᴇᴄᴋ Pᴀɴɴɪᴋᴏɴɢᴀ Wɪᴛʜ Gᴇɴᴇʀᴀᴛᴇ Iɴᴠɪᴛᴇ Lɪɴᴋ Pᴇʀᴍɪssɪᴏɴ.')
+            return await message.reply('അതിനു ഞാൻ നിങ്ങളുടെ ഗ്രൂപ്പിൽ ഉണ്ടോ... 🤔!!Wɪᴛʜ Gᴇɴᴇʀᴀᴛᴇ Iɴᴠɪᴛᴇ Lɪɴᴋ Pᴇʀᴍɪssɪᴏɴ.')
     else:
         link = f"@{message.forward_from_chat.username}"
     buttons = [
