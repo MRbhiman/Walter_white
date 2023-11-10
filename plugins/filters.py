@@ -17,7 +17,7 @@ from info import ADMINS
 async def addfilter(client, message):
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"Nᴇɴɢᴀ Aᴅᴅʀᴇss Iʟʟᴀ Tʜᴀ Aᴅᴍɪɴ 🤣 Use /connect {message.chat.id} in PM")
+        return await message.reply(f"you Aᴅᴍɪɴ 🤣 Use /connect {message.chat.id} in PM")
     chat_type = message.chat.type
     args = message.text.html.split(None, 1)
 
@@ -29,10 +29,10 @@ async def addfilter(client, message):
                 chat = await client.get_chat(grpid)
                 title = chat.title
             except:
-                await message.reply_text("Nᴀ Uɴɢᴀ Gʀᴏᴜᴘ Lᴀ Eʀᴜᴋᴇɴ ɴᴀɴᴜ Cʜᴇᴄᴋ Pᴀɴɴᴜɴɢᴀ!!", quote=True)
+                await message.reply_text("അതിനു ഞാൻ നിങ്ങളുടെ ഗ്രൂപ്പിൽ ഉണ്ടോ... 🤔!!", quote=True)
                 return
         else:
-            await message.reply_text("Nᴀ Iɴɴᴜᴍ Eɴᴛʜᴀ Gʀᴏᴜᴘ Lᴀʏᴜᴍ Cᴏɴɴᴇᴄᴛ Aɢᴀʟᴀ!", quote=True)
+            await message.reply_text("അതിനു ഞാൻ നിങ്ങളുടെ ഗ്രൂപ്പിൽ ഉണ്ടോ... 🤔!!", quote=True)
             return
 
     elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
@@ -59,7 +59,7 @@ async def addfilter(client, message):
     text = extracted[0].lower()
 
     if not message.reply_to_message and len(extracted) < 2:
-        await message.reply_text("Eᴛʜᴀᴄʜɪ Tɪᴛʟᴇ Kᴜᴅᴜɴɢᴀ Uɴɢᴀ Fɪʟᴛᴇʀ Sᴀᴠᴇ Aɢᴜʀᴀᴛʜᴜᴋᴜ", quote=True)
+        await message.reply_text("pls give any title to it", quote=True)
         return
 
     if (len(extracted) >= 2) and not message.reply_to_message:
@@ -122,7 +122,7 @@ async def get_all(client, message):
     chat_type = message.chat.type
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"Nᴇɴɢᴀ Aᴅᴅʀᴇss IʟʟᴀTʜᴀ Aᴅᴍɪɴ 🤣 Use /connect {message.chat.id} in PM")
+        return await message.reply(f"you admin 🤣 Use /connect {message.chat.id} in PM")
     if chat_type == enums.ChatType.PRIVATE:
         grpid = await active_connection(str(userid))
         if grpid is not None:
@@ -131,10 +131,10 @@ async def get_all(client, message):
                 chat = await client.get_chat(grpid)
                 title = chat.title
             except:
-                await message.reply_text("Nᴀ Uɴɢᴀ Gʀᴏᴜᴘ Lᴀ Eʀᴜᴋᴇɴ ɴᴀɴᴜ Cʜᴇᴄᴋ Pᴀɴɴᴜɴɢᴀ!!", quote=True)
+                await message.reply_text("അതിനു ഞാൻ നിങ്ങളുടെ ഗ്രൂപ്പിൽ ഉണ്ടോ... 🤔!!", quote=True)
                 return
         else:
-            await message.reply_text("Nᴀ Iɴɴᴜᴍ Eɴᴛʜᴀ Gʀᴏᴜᴘ Lᴀʏᴜᴍ Cᴏɴɴᴇᴄᴛ Aɢᴀʟᴀ!", quote=True)
+            await message.reply_text("അതിനു ഞാൻ നിങ്ങളുടെ ഗ്രൂപ്പിൽ ഉണ്ടോ... 🤔!!", quote=True)
             return
 
     elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
@@ -183,7 +183,7 @@ async def get_all(client, message):
 async def deletefilter(client, message):
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"Nᴇɴɢᴀ Aᴅᴅʀᴇss IʟʟᴀTɢᴀ Aᴅᴍɪɴ 🤣 Use /connect {message.chat.id} in PM")
+        return await message.reply(f"you Aᴅᴍɪɴ 🤣 Use /connect {message.chat.id} in PM")
     chat_type = message.chat.type
 
     if chat_type == enums.ChatType.PRIVATE:
@@ -194,10 +194,10 @@ async def deletefilter(client, message):
                 chat = await client.get_chat(grpid)
                 title = chat.title
             except:
-                await message.reply_text("Nᴀ Uɴɢᴀ Gʀᴏᴜᴘ Lᴀ Eʀᴜᴋᴇɴ ɴᴀɴᴜ Cʜᴇᴄᴋ Pᴀɴɴᴜɴɢᴀ!!", quote=True)
+                await message.reply_text("അതിനു ഞാൻ നിങ്ങളുടെ ഗ്രൂപ്പിൽ ഉണ്ടോ... 🤔!!", quote=True)
                 return
         else:
-            await message.reply_text("Nᴀ Iɴɴᴜᴍ Eɴᴛʜᴀ Gʀᴏᴜᴘ Lᴀʏᴜᴍ Cᴏɴɴᴇᴄᴛ Aɢᴀʟᴀ!", quote=True)
+            await message.reply_text("അതിനു ഞാൻ നിങ്ങളുടെ ഗ്രൂപ്പിൽ ഉണ്ടോ... 🤔!!", quote=True)
             return
 
     elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
@@ -235,7 +235,7 @@ async def deletefilter(client, message):
 async def delallconfirm(client, message):
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"Nᴇɴɢᴀ Aᴅᴅʀᴇss IʟʟᴀTʜᴀ Aᴅᴍɪɴ 🤣 Use /connect {message.chat.id} in PM")
+        return await message.reply(f"you Aᴅᴍɪɴ 🤣 Use /connect {message.chat.id} in PM")
     chat_type = message.chat.type
 
     if chat_type == enums.ChatType.PRIVATE:
@@ -246,10 +246,10 @@ async def delallconfirm(client, message):
                 chat = await client.get_chat(grpid)
                 title = chat.title
             except:
-                await message.reply_text("Nᴀ Uɴɢᴀ Gʀᴏᴜᴘ Lᴀ Eʀᴜᴋᴇɴ ɴᴀɴᴜ Cʜᴇᴄᴋ Pᴀɴɴᴜɴɢᴀ!!", quote=True)
+                await message.reply_text("അതിനു ഞാൻ നിങ്ങളുടെ ഗ്രൂപ്പിൽ ഉണ്ടോ... 🤔!!", quote=True)
                 return
         else:
-            await message.reply_text("Nᴀ Iɴɴᴜᴍ Eɴᴛʜᴀ Gʀᴏᴜᴘ Lᴀʏᴜᴍ Cᴏɴɴᴇᴄᴛ Aɢᴀʟᴀ!", quote=True)
+            await message.reply_text("അതിനു ഞാൻ നിങ്ങളുടെ ഗ്രൂപ്പിൽ ഉണ്ടോ... 🤔!!", quote=True)
             return
 
     elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
