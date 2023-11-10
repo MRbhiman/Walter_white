@@ -37,13 +37,12 @@ async def save_group(bot, message):
             await bot.leave_chat(message.chat.id)
             return
         buttons = [[
-            InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
-            InlineKeyboardButton('👩‍💻 Rᴇᴘᴏ', url='https://Github.Com/TamilanBotsZ/AwesomeFilter'),
-            InlineKeyboardButton('📢 Updates', url='https://t.me/Tamilan_BotsZ')
+            InlineKeyboardButton('Walter🎩White', url='https://t.me/mrbhiman44'),
+            InlineKeyboardButton('Jesse💰Pinkman', url='https://t.me/Haker8000')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
-            text=f"<b>💌 Aᴅᴅ PᴀɴɴᴀTʜᴜᴋᴜ Nᴀɴᴅʀɪ ♥️ {message.chat.title} ❣️\n\nIf you have any questions & doubts about using me contact support.</b>",
+            text=f"<b>💌 Add ചെയ്തതിനു വളരെ നന്ദി...❤️ {message.chat.title} ❣️\n\nIf you have any questions & doubts about using me contact support.</b>",
             reply_markup=reply_markup)
     else:
         settings = await get_settings(message.chat.id)
@@ -96,10 +95,10 @@ async def disable_chat(bot, message):
     try:
         chat_ = int(chat)
     except:
-        return await message.reply('Cᴏʀʀᴇᴄᴛ Aɴᴀ Cʜᴀᴛ Iᴅ Kᴜᴅᴜɴɢᴀ')
+        return await message.reply('give me the correct id')
     cha_t = await db.get_chat(int(chat_))
     if not cha_t:
-        return await message.reply("Uɴɢᴀ Cʜᴀᴛ Nᴏᴛ Fᴏᴜɴᴅ Iɴ Mʏ Lᴏᴅɢᴇ")
+        return await message.reply("Cʜᴀᴛ Nᴏᴛ Fᴏᴜɴᴅ")
     if cha_t['is_disabled']:
         return await message.reply(f"Iɴᴛʜᴀ Cʜᴀᴛ Aʟʀᴇᴀᴅʏ Dɪsᴀʙʟᴇᴅ:\nReason-<code> {cha_t['reason']} </code>")
     await db.disable_chat(int(chat_), reason)
@@ -122,12 +121,12 @@ async def disable_chat(bot, message):
 @Client.on_message(filters.command('enable') & filters.user(ADMINS))
 async def re_enable_chat(bot, message):
     if len(message.command) == 1:
-        return await message.reply('Cʜᴀᴛ Iᴅ Sᴇɴᴅ Pᴀɴɴᴜɴɢᴀ')
+        return await message.reply('give me the correct chat id')
     chat = message.command[1]
     try:
         chat_ = int(chat)
     except:
-        return await message.reply('Cᴏʀʀᴇᴄᴛ Aʜ Cʜᴀᴛ Iᴅ Kᴜᴅᴜɴɢᴀ')
+        return await message.reply('give me the correct id')
     sts = await db.get_chat(int(chat))
     if not sts:
         return await message.reply("Cʜᴀᴛ Nᴏᴛ Fᴏᴜɴᴅ Iɴ Nʏ Lᴏᴅɢᴇ !")
@@ -135,7 +134,7 @@ async def re_enable_chat(bot, message):
         return await message.reply('Tɢɪs Cʜᴀᴛ Nᴏ Yᴇᴛ Dɪsᴀʙʟᴇ')
     await db.re_enable_chat(int(chat_))
     temp.BANNED_CHATS.remove(int(chat_))
-    await message.reply("Cʜᴀᴛ Aʜ Rᴇ-Eɴᴀʙʟᴇ Pᴀɴɴɪʏᴀᴄʜɪ")
+    await message.reply("Cʜᴀᴛ Rᴇ-Eɴᴀʙʟᴇd")
 
 
 @Client.on_message(filters.command('stats') & filters.incoming)
@@ -156,25 +155,25 @@ async def get_ststs(bot, message):
 # @Client.on_message(filters.command('invite') & filters.user(ADMINS))
 async def gen_invite(bot, message):
     if len(message.command) == 1:
-        return await message.reply('Cʜᴀᴛ Iᴅ Sᴇɴᴅ Pᴀɴɴᴜɴɢᴀ')
+        return await message.reply('give me the correct chat id')
     chat = message.command[1]
     try:
         chat = int(chat)
     except:
-        return await message.reply('Cᴏʀʀᴇᴄᴛ Aʜ Cʜᴀᴛ Iᴅ Kᴜᴅᴜɴɢᴀ')
+        return await message.reply('give me the correct id')
     try:
         link = await bot.create_chat_invite_link(chat)
     except ChatAdminRequired:
-        return await message.reply("Iɴᴠɪᴛᴇ Lɪɴᴋ Gᴇɴᴇʀᴀᴛᴇ Pᴀɴɴᴀ Aᴅᴍɪɴ Rɪɢʜᴛ Kᴜᴅᴜᴋᴀʟᴀ")
+        return await message.reply("i didnt get right to invite")
     except Exception as e:
         return await message.reply(f'Error {e}')
-    await message.reply(f'Uɴɢᴀ Iɴᴠɪᴛᴇ Lɪɴᴋ Hᴇʀᴇ {link.invite_link}')
+    await message.reply(f'your invite link {link.invite_link}')
 
 @Client.on_message(filters.command('ban') & filters.user(ADMINS))
 async def ban_a_user(bot, message):
     # https://t.me/GetTGLink/4185
     if len(message.command) == 1:
-        return await message.reply('Uɴɢᴀ Usᴇʀ ɪᴅ / Usᴇʀ Nᴀᴍᴇ Kᴜᴅᴜɴɢᴀ')
+        return await message.reply('Usᴇʀ ɪᴅ / Usᴇʀ Nᴀᴍᴇ Kᴜᴅᴜɴɢᴀ')
     r = message.text.split(None)
     if len(r) > 2:
         reason = message.text.split(None, 2)[2]
