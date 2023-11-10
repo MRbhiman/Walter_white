@@ -48,7 +48,7 @@ async def next_page(bot, query):
         offset = 0
     search = BUTTONS.get(key)
     if not search:
-        await query.answer("Uɴɢᴀʟᴜᴋᴜ Vᴇɴᴜɢᴜʀᴀ Fɪʟᴇs Nᴀᴍᴇ Aʜ Tʜɪʀᴜᴍʙɪ Sᴇɴᴅ Pᴀɴɴᴜɴɢᴀ.", show_alert=True)
+        await query.answer("sent the file name you whant", show_alert=True)
         return
 
     files, n_offset, total = await get_search_results(search, offset=offset, filter=True)
@@ -125,7 +125,7 @@ async def advantage_spoll_choker(bot, query):
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.id)
     if not movies:
-        return await query.answer("Nᴇɴɢᴀ Exᴘɪʀᴇᴅ Aɴᴀ Bᴜᴛᴛᴏɴ Cʟɪᴄᴋ Pᴀɴɴɪʀᴜᴋɪɴɢᴀ", show_alert=True)
+        return await query.answer("ഈ link expired ആയി..Ask for new.❤️", show_alert=True)
     movie = movies[(int(movie_))]
     await query.answer('Cʜᴇᴄᴋɪɴɢ Fɪʟᴇs Iɴ Mʏ Lᴏᴅɢᴇ..')
     k = await manual_filters(bot, query.message, text=movie)
@@ -135,7 +135,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('Nᴇɴɢᴀ Kᴇᴛᴀ Fɪʟᴇs Yᴇɴɴᴏᴅᴀ Lᴏᴅɢᴇ Lᴀ Iʟʟᴀ')
+            k = await query.message.edit('ഈ file ഇവിടെ ഇല്ലടാ..😥admin നോട്‌ ചോദിക്. @mrbhiman44')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -156,27 +156,27 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     chat = await client.get_chat(grpid)
                     title = chat.title
                 except:
-                    await query.message.edit_text("Nᴀ Iɴɴᴜᴍ Eɴᴛʜᴀ Gʀᴏᴜᴘ Lᴀʏᴜᴍ Cᴏɴɴᴇᴄᴛ Aɢᴀʟᴀ!!", quote=True)
-                    return await query.answer('Tʜᴇᴛᴇʀ & Oᴛᴛ Kᴜ Kᴀsᴜ Iʟʟᴀ Yᴀ ♥️ Nᴀ Iʀᴜᴋᴋᴇɴ')
+                    await query.message.edit_text("അതിനു ഞാൻ നിങ്ങളുടെ ഗ്രൂപ്പിൽ ഉണ്ടോ... 🤔!!", quote=True)
+                    return await query.answer('Theter & ott യിൽ കൊടുക്കാൻ പൈസ ഇല്ലെ....Thats why am here..❤️')
             else:
                 await query.message.edit_text(
                     "I'm not connected to any groups!\nCheck /connections or connect to any groups",
                     quote=True
                 )
-                return await query.answer('Tʜᴇᴛᴇʀ & Oᴛᴛ Kᴜ Kᴀsᴜ Iʟʟᴀ Yᴀ ♥️ Nᴀ Iʀᴜᴋᴋᴇɴ')
+                return await query.answer('Theter & ott യിൽ കൊടുക്കാൻ പൈസ ഇല്ലെ....Thats why am here..❤️')
 
         elif chat_type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
             grp_id = query.message.chat.id
             title = query.message.chat.title
 
         else:
-            return await query.answer('Tʜᴇᴛᴇʀ & Oᴛᴛ Kᴜ Kᴀsᴜ Iʟʟᴀ Yᴀ ♥️ Nᴀ Iʀᴜᴋᴋᴇɴ')
+            return await query.answer('Theter & ott യിൽ കൊടുക്കാൻ പൈസ ഇല്ലെ....Thats why am here..❤️')
 
         st = await client.get_chat_member(grp_id, userid)
         if (st.status == enums.ChatMemberStatus.OWNER) or (str(userid) in ADMINS):
             await del_all(query.message, grp_id, title)
         else:
-            await query.answer("Nᴇɴɢᴀ Gʀᴏᴜᴘ Iᴡɴᴇʀ Oʀ Aᴜᴛʜ Usᴇʀ Aʜ Eʀᴜɴᴛʜᴀ Mᴀᴀᴛᴜᴍ Tʜᴀ Wᴏʀᴋ Aɢᴜᴍ!", show_alert=True)
+            await query.answer("need users for working!", show_alert=True)
     elif query.data == "delallcancel":
         userid = query.from_user.id
         chat_type = query.message.chat.type
@@ -195,7 +195,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 except:
                     pass
             else:
-                await query.answer("Eᴛʜᴜ Uɴɢᴀʟᴜᴋᴜ Iʟʟᴀ!!", show_alert=True)
+                await query.answer("its not for you", show_alert=True)
     elif "groupcb" in query.data:
         await query.answer()
 
@@ -224,7 +224,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=keyboard,
             parse_mode=enums.ParseMode.MARKDOWN
         )
-        return await query.answer('Tʜᴇᴛᴇʀ & Oᴛᴛ Kᴜ Kᴀsᴜ Iʟʟᴀ Yᴀ ♥️ Nᴀ Iʀᴜᴋᴋᴇɴ')
+        return await query.answer('Theter & ott യിൽ കൊടുക്കാൻ പൈസ ഇല്ലെ....Thats why am here..❤️')
     elif "connectcb" in query.data:
         await query.answer()
 
@@ -245,7 +245,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         else:
             await query.message.edit_text('Some error occurred!!', parse_mode=enums.ParseMode.MARKDOWN)
-        return await query.answer('Tʜᴇᴛᴇʀ & Oᴛᴛ Kᴜ Kᴀsᴜ Iʟʟᴀ Yᴀ ♥️ Nᴀ Iʀᴜᴋᴋᴇɴ')
+        return await query.answer('Theter & ott യിൽ കൊടുക്കാൻ പൈസ ഇല്ലെ....Thats why am here..❤️')
     elif "disconnect" in query.data:
         await query.answer()
 
@@ -286,7 +286,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f"Some error occurred!!",
                 parse_mode=enums.ParseMode.MARKDOWN
             )
-        return await query.answer('Tʜᴇᴛᴇʀ & Oᴛᴛ Kᴜ Kᴀsᴜ Iʟʟᴀ Yᴀ ♥️ Nᴀ Iʀᴜᴋᴋᴇɴ')
+        return await query.answer('Theter & ott യിൽ കൊടുക്കാൻ പൈസ ഇല്ലെ....Thats why am here..❤️')
     elif query.data == "backcb":
         await query.answer()
 
@@ -297,7 +297,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.message.edit_text(
                 "Nᴀ Iɴɴᴜᴍ Eɴᴛʜᴀ Gʀᴏᴜᴘ Lᴀʏᴜᴍ Cᴏɴɴᴇᴄᴛ Aɢᴀʟᴀ.",
             )
-            return await query.answer('Tʜᴇᴛᴇʀ & Oᴛᴛ Kᴜ Kᴀsᴜ Iʟʟᴀ Yᴀ ♥️ Nᴀ Iʀᴜᴋᴋᴇɴ')
+            return await query.answer('Theter & ott യിൽ കൊടുക്കാൻ പൈസ ഇല്ലെ....Thats why am here..❤️')
         buttons = []
         for groupid in groupids:
             try:
@@ -333,7 +333,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
         if not files_:
-            return await query.answer( ' Fɪʟᴇ Kᴀɴᴀᴘᴏᴄʜɪ 😬. ')
+            return await query.answer( ' Fɪʟᴇ not seeing 😬. ')
         files = files_[0]
         title = files.file_name
         size = get_size(files.file_size)
@@ -364,7 +364,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                     caption=f_caption,
                     protect_content=True if ident == "filep" else False 
                 )
-                await query.answer('Bᴀᴄᴋ Bᴜᴛᴛᴏɴ Cʟɪᴄᴋ Pᴀɴɴɪ Fɪʟᴇs Aʜ Dᴏᴡɴʟᴏᴀᴅ Pᴀɴɴɪᴋᴏɴɢᴀ', show_alert=True)
+                await query.answer('Movie personal ആയിട്ട് അയച്ചാട്ടുണ്ട്.... ❤️', show_alert=True)
         except UserIsBlocked:
             await query.answer('Uɴʙʟᴏᴄᴋ Tʜᴇ Bᴏᴛ Mᴀᴀʜ !', show_alert=True)
         except PeerIdInvalid:
@@ -373,12 +373,12 @@ async def cb_handler(client: Client, query: CallbackQuery):
             await query.answer(url=f"https://t.me/{temp.U_NAME}?start={ident}_{file_id}")
     elif query.data.startswith("checksub"):
         if AUTH_CHANNEL and not await is_subscribed(client, query):
-            await query.answer("Iᴛʜᴜᴛʜᴀɴ Uʀᴜᴛᴛᴜ ✓ Fɪʀsᴛ Jᴏɪɴ Pᴀɴɴɪᴛᴜ Iᴛʜᴀ Cʟɪᴄᴋ Pᴀɴɴᴜɴɢᴀ 😒", show_alert=True)
+            await query.answer("Update channel ഇൽ Join ചെയ്യ് 1st എന്നിട്ട് try again കൊടുത്ത് നോക്കു...❤️", show_alert=True)
             return
         ident, file_id = query.data.split("#")
         files_ = await get_file_details(file_id)
         if not files_:
-            return await query.answer('Fɪʟᴇ Kᴀɴᴀᴘᴏᴄʜɪ 😬.')
+            return await query.answer('Fɪʟᴇ not seeing 😬.')
         files = files_[0]
         title = files.file_name
         size = get_size(files.file_size)
@@ -407,10 +407,8 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('➕ Aᴅᴅ Mᴇ Tᴏ Uʀ Gʀᴏᴜᴘs ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
             InlineKeyboardButton('🔍 Sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Uᴘᴅᴀᴛᴇs', url='https://t.me/Tamilan_BotsZ')
+            InlineKeyboardButton('Walter🎩White', url='https://t.me/mrbhiman44')
             ],[
-            InlineKeyboardButton('ℹ️ Hᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('👩‍💻 Rᴇᴘᴏ', url='https://Github.Com/TamilanBotsZ/AwesomeFilter'),
             InlineKeyboardButton('😊 Aʙᴏᴜᴛ', callback_data='about')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
@@ -419,7 +417,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        await query.answer('Tʜᴇᴛᴇʀ & Oᴛᴛ Kᴜ Kᴀsᴜ Iʟʟᴀ Yᴀ ♥️ Nᴀ Iʀᴜᴋᴋᴇɴ')
+        await query.answer('Theter & ott യിൽ കൊടുക്കാൻ പൈസ ഇല്ലെ....Thats why am here..❤️')
     elif query.data == "help":
         buttons = [[
             InlineKeyboardButton('Manual Filter', callback_data='manuelfilter'),
@@ -439,11 +437,9 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🤖 Uᴘᴅᴀᴛᴇs', url='https://t.me/Tamilan_BotsZ'),
-            InlineKeyboardButton('♥️ Sᴏᴜʀᴄᴇ', callback_data='source')
+            InlineKeyboardButton('Walter🎩White', url='https://t.me/mrbhiman44'),
         ], [
             InlineKeyboardButton('🏠 Hᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('👩‍💻 Rᴇᴘᴏ', url='https://Github.Com/TamilanBotsZ/AwesomeFilter'),
             InlineKeyboardButton('🔐 Cʟᴏsᴇ', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
