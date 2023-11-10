@@ -24,10 +24,10 @@ async def allowed(_, __, message):
 async def gen_link_s(bot, message):
     replied = message.reply_to_message
     if not replied:
-        return await message.reply('SʜᴀʀᴇAʙʟᴇ Lɪɴᴋ Gᴇɴᴇʀᴀᴛᴇ Pᴀɴɴᴜʀᴀᴛʜᴜᴋᴜ Eᴛʜᴀᴄʜɪ Mᴇssᴀɢᴇ Kᴜ Rᴇᴘʟʏ Pᴀɴɴᴜɴɢᴀ.')
+        return await message.reply('pls type any replay.')
     file_type = replied.media
     if file_type not in [enums.MessageMediaType.VIDEO, enums.MessageMediaType.AUDIO, enums.MessageMediaType.DOCUMENT]:
-        return await message.reply("Sᴜᴘᴘᴏʀᴛ Aɢᴜʀᴀ Fᴏʀᴍᴀᴛ Kᴜ Mᴀᴛᴛᴜᴍ Rᴇᴘʟʏ Pᴀɴɴᴜɴɢᴀ")
+        return await message.reply("pls give replay in supporting format")
     if message.has_protected_content and message.chat.id not in ADMINS:
         return await message.reply("okDa")
     file_id, ref = unpack_new_file_id((getattr(replied, file_type.value)).file_id)
@@ -63,17 +63,17 @@ async def gen_link_batch(bot, message):
         l_chat_id  = int(("-100" + l_chat_id))
 
     if f_chat_id != l_chat_id:
-        return await message.reply("Cʜᴀᴛ ɪᴅs Mᴀᴛᴄʜ Aɢᴀʟᴀ.")
+        return await message.reply("didt Mᴀᴛᴄʜ Cʜᴀᴛ ɪᴅs.")
     try:
         chat_id = (await bot.get_chat(f_chat_id)).id
     except ChannelInvalid:
-        return await message.reply('Iɴᴛʜᴀ Cʜᴀɴɴᴇʟ / Gʀᴏᴜᴘ Pʀɪᴠᴀᴛᴇ Aʜ Iʀᴜᴋᴀʟʟᴀᴍ. Pʀɪᴠᴀᴛᴇ Cʜᴀɴɴᴇʟ / Gʀᴏᴜᴘ Yᴇɴɴᴀ Aᴅᴍɪɴ Aᴋɪ Fɪʟᴇs Iɴᴅᴇx Pᴀɴɴɪᴋᴏɴɢᴀ')
+        return await message.reply('may be this channel privet or am not admin in it')
     except (UsernameInvalid, UsernameNotModified):
         return await message.reply('Invalid Link specified.')
     except Exception as e:
         return await message.reply(f'Errors - {e}')
 
-    sts = await message.reply("Uɴɢᴀ Mᴇssᴀɢᴇ Kᴜ Lɪɴᴋ Gᴇɴᴇʀᴀᴛᴇ Pᴀɴɴᴜʀᴏᴍ.\nTʜɪs ᴍᴀʏ ᴛᴀᴋᴇ ᴛɪᴍᴇ ᴅᴇᴘᴇɴᴅɪɴɢ ᴜᴘᴏɴ ɴᴜᴍʙᴇʀ ᴏғ ᴍᴇssᴀɢᴇs")
+    sts = await message.reply("ᴍᴀʏ ᴛᴀᴋᴇ ᴛɪᴍᴇ ᴅᴇᴘᴇɴᴅɪɴɢ ᴜᴘᴏɴ ɴᴜᴍʙᴇʀ ᴏғ ᴍᴇssᴀɢᴇs")
     if chat_id in FILE_STORE_CHANNEL:
         string = f"{f_msg_id}_{l_msg_id}_{chat_id}_{cmd.lower().strip()}"
         b_64 = base64.urlsafe_b64encode(string.encode("ascii")).decode().strip("=")
