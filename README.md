@@ -1,6 +1,6 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=45&duration=4000&pause=1000&color=840000&random=false&width=500&height=70&lines=i+am+not+in+danger!++;i+am+the+danger!)](https://git.io/typing-svg)</p>
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=45&duration=4000&pause=1000&color=f8d904&random=false&width=500&height=70&lines=i+am+not+in+danger!++;i+am+the+danger!)](https://git.io/typing-svg)</p>
 <p align="center">
-  <img src="https://telegra.ph/file/34de07b2c61d73ef74ba0.jpg" alt="Awesome Filter Logo">
+  <img src="https://telegra.ph/file/c03f4b9f7e2804985f815.jpg" alt="Awesome Filter Logo">
   </p>
   <h1 align="center">
     <b> 𝗔𝗪𝗘𝗦𝗢𝗠𝗘 𝗙𝗜𝗟𝗧𝗘𝗥</b>
