@@ -38,3 +38,5 @@ async def grp_bd(bot, message):
     except:
         pass
     await bot.leave_chat(message.chat.id)
+
+
