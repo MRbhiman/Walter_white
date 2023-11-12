@@ -125,7 +125,7 @@ async def advantage_spoll_choker(bot, query):
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.id)
     if not movies:
-        return await query.answer("Nᴇɴɢᴀ Exᴘɪʀᴇᴅ Aɴᴀ Bᴜᴛᴛᴏɴ Cʟɪᴄᴋ Pᴀɴɴɪʀᴜᴋɪɴɢᴀ", show_alert=True)
+        return await query.answer("ഇത് നിങ്ങളുടേതല്ല🤔", show_alert=True)
     movie = movies[(int(movie_))]
     await query.answer('Cʜᴇᴄᴋɪɴɢ Fɪʟᴇs Iɴ Mʏ Lᴏᴅɢᴇ..')
     k = await manual_filters(bot, query.message, text=movie)
@@ -135,7 +135,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('Nᴇɴɢᴀ Kᴇᴛᴀ Fɪʟᴇs Yᴇɴɴᴏᴅᴀ Lᴏᴅɢᴇ Lᴀ Iʟʟᴀ')
+            k = await query.message.edit('This Movie Not available in telegram or not released in ott 😥 report @mrbhiman44')
             await asyncio.sleep(10)
             await k.delete()
 
