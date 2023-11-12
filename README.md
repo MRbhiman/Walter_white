@@ -8,33 +8,32 @@
   
 [![Static Badge](https://img.shields.io/badge/its%20me-Walter_White-brightgreen?style=flat-square&logo=rootme&logoColor=yellow&labelColor=black&color=yellow)](https://github.com/TamilanBotsZ/AwesomeFilter)   
    </h1>
-👩‍💻 𝗩𝗘𝗥𝗦𝗜𝗢𝗡 :- 0.3 ✨
 
 
 ## Features
 
-- 💥Auto Filter
-- 💥Manual Filter
-- 💥Tamil Coded Repo
-- 💥Funny Tamil Repo
-- 💥Auto Delete Feature
-- 💥Fully Attractive Fonts
-- 💥Bot Pm On/Off
-- 💥Protect Content
-- 💥Copyright Free Repo
-- 💥IMDB
-- 💥Admin Commands
-- 💥Broadcast
-- 💥Index
-- 💥IMDB search
-- 💥Inline Search
-- 💥Random pics
-- 💥ids and User info 
-- 💥Stats, Users
-- 💥Ban, Unban, Leave, Disable
-- 💥Spelling Check Feature
-- 💥File Store
-- 💥Many Features
+<b><details><summary>𝗪𝗮𝗹𝘁𝗲𝗿 𝗪𝗵𝗶𝘁𝗲</summary><br>
+	
+| Features |  Availability |
+| :------: |  :----------: |
+|   Auto Filter     |       ✅     |
+|   Manual Filter     |       ✅     |
+|   IMDB     |       ✅    |
+|   Admin Commands     |       ✅     |
+|   Broadcast     |       ✅     |
+|   Index     |       ✅      |
+|   IMDB search     |       ✅      |
+|   Inline Search     |       ✅      |
+|   Random pics     |       ✅     |
+|   ids and User info     |       ✅     |
+|   Stats, Users     |       ✅      |
+|   Chats, Ban     |       ✅      |
+|   Unban, Leave     |       ✅     |
+|   Disable, Channel     |       ✅     |
+|   Spelling Check Feature     |       ✅      |
+</a>
+</p>
+</details> 
 
 ## Messing Editz Follow This 👇
 
