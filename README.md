@@ -1,9 +1,10 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=45&duration=4000&pause=1000&color=f8d904&random=false&width=500&height=70&lines=i+am+not+in+danger!++;i+am+the+danger!)](https://git.io/typing-svg)</p>
 <p align="center">
-  <img src="https://telegra.ph/file/c03f4b9f7e2804985f815.jpg">
+  <img src="https://telegra.ph/file/a466bae8f3b832608755f.jpg">
   </p>
   <h1 align="center">
-    <b> 𝗔𝗪𝗘𝗦𝗢𝗠𝗘 𝗙𝗜𝗟𝗧𝗘𝗥</b>
+    
+  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Teko&weight=600&size=45&duration=4001&pause=1000&color=F8D904&repeat=false&random=true&width=476&height=60&lines=Walter+White)](https://git.io/typing-svg)</p>
   
 [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/TamilanBotsZ/AwesomeFilter)   
    </h1>
