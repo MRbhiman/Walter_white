@@ -4,9 +4,9 @@
   </p>
   <h1 align="center">
     
-  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Teko&weight=600&size=45&duration=4001&pause=1000&color=F8D904&repeat=false&random=true&width=476&height=60&lines=Walter+White)](https://git.io/typing-svg)</p>
+ <p>𝗪𝗮𝗹𝘁𝗲𝗿 𝗪𝗵𝗶𝘁𝗲</p>
   
-[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/TamilanBotsZ/AwesomeFilter)   
+[![Static Badge](https://img.shields.io/badge/its%20me-Walter_White-brightgreen?style=flat-square&logo=rootme&logoColor=yellow&labelColor=black&color=yellow)](https://github.com/TamilanBotsZ/AwesomeFilter)   
    </h1>
 👩‍💻 𝗩𝗘𝗥𝗦𝗜𝗢𝗡 :- 0.3 ✨
 
