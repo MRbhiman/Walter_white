@@ -68,7 +68,7 @@ async def start(client, message):
         btn = [
             [
                 InlineKeyboardButton(
-                    "🤖 Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ", url=invite_link.invite_link
+                    "❤Jᴏɪɴ Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ🖤", url=invite_link.invite_link
                 )
             ]
         ]
@@ -82,7 +82,7 @@ async def start(client, message):
                 btn.append([InlineKeyboardButton(" 🔄 Tʀʏ Aɢᴀɪɴ", url=f"https://t.me/{temp.U_NAME}?start={message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Yᴇɴɴᴏᴅᴀ Uᴘᴅᴀᴛᴇs CʜᴀɴɴᴇʟA Jᴏɪɴ Pᴀɴɴᴀ Tʜᴀ Yᴇɴɴᴀ Usᴇ Pᴀɴɴᴀ Mᴜᴅɪʏᴜᴍ**",
+            text="**🖤Please Join My Updates Channel to use this Bot❤!**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode=enums.ParseMode.MARKDOWN
             )
@@ -362,7 +362,7 @@ async def delete_all_index(bot, message):
 @Client.on_callback_query(filters.regex(r'^autofilter_delete'))
 async def delete_all_index_confirm(bot, message):
     await Media.collection.drop()
-    await message.answer('Tʜᴇᴛᴇʀ & Oᴛᴛ Kᴜ Kᴀsᴜ Iʟʟᴀʏᴀ 💌 Pᴀʀᴀᴠᴀʟʟᴀ Nᴀ Iʀᴜᴋᴇɴ')
+    await message.answer('Theter & ott യിൽ കൊടുക്കാൻ പൈസ ഇല്ലെ....Thats why am here..❤️')
     await message.message.edit('Succesfully Deleted All The Indexed Files.')
 
 
