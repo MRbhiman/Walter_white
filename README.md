@@ -66,9 +66,12 @@
   </p>
   </details> 
 
-## Credits 
- [![TamilanBotsZ-Owner](https://img.shields.io/static/v1?label=TamilanBotsZ&message=devs&color=critical)](https://telegram.dog/Tamilan_BotsZ)
+## I Know Cooking
+ [![Static Badge](https://img.shields.io/badge/Walter_White-brightgreen?style=flat-square&logo=telegram&logoColor=yellow&labelColor=black&color=yellow)](https://telegram.dog/Tamilan_BotsZ)
 
- [![Promoted This Repo](https://img.shields.io/static/v1?label=GreyMatters&message=devs&color=critical)](https://telegram.dog/Tamilan_BotsZ)
+## He Know Business
+ [![Static Badge](https://img.shields.io/badge/Jesse%20Pinkman-brightgreen?style=flat-square&logo=telegram&logoColor=yellow&labelColor=black&color=yellow)](https://telegram.dog/Tamilan_BotsZ)
 
 ## Thanks to 
+
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Russo+One&size=30&duration=4000&pause=1000&color=f8d904&random=false&width=435&lines=No+one...+)](https://git.io/typing-svg)
