@@ -44,8 +44,8 @@
 * `API_HASH`: Get this value from [telegram.org](https://my.telegram.org/apps)
 * `CHANNELS`: Username or ID of channel or group. Separate multiple IDs by space
 * `ADMINS`: Username or ID of Admin. Separate multiple Admins by space
-* `DATABASE_URI`: [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com). For more help watch this [video](https://youtu.be/jS_nLQ8i2EQ )
-* `DATABASE_NAME`: Name of the database in [mongoDB](https://www.mongodb.com). For more help watch this [video](https://youtu.be/jS_nLQ8i2EQ )
+* `DATABASE_URI`: [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com). For more help [walter💛](https://t.me/mrbhiman44)
+* `DATABASE_NAME`: Name of the database in [mongoDB](https://www.mongodb.com). For more help [walter💛](https://t.me/mrbhiman44)
 * `LOG_CHANNEL` : A channel to log the activities of bot. Make sure bot is an admin in the channel.
 * Check [info.py](https://github.com/TamilanBotsz/AwesomeFilter/blob/master/info.py) for more variables
 
@@ -66,10 +66,10 @@
   </details> 
 
 ## I Know Cooking
- [![Static Badge](https://img.shields.io/badge/Walter_White-brightgreen?style=flat-square&logo=telegram&logoColor=yellow&labelColor=black&color=yellow)](https://telegram.dog/Tamilan_BotsZ)
+ [![Static Badge](https://img.shields.io/badge/Walter_White-brightgreen?style=flat-square&logo=telegram&logoColor=yellow&labelColor=black&color=yellow)](https://t.me/mrbhiman44)
 
 ## He Know Business
- [![Static Badge](https://img.shields.io/badge/Jesse%20Pinkman-brightgreen?style=flat-square&logo=telegram&logoColor=yellow&labelColor=black&color=yellow)](https://telegram.dog/Tamilan_BotsZ)
+ [![Static Badge](https://img.shields.io/badge/Jesse%20Pinkman-brightgreen?style=flat-square&logo=telegram&logoColor=yellow&labelColor=black&color=yellow)](https://t.me/Haker8000)
 
 ## Thanks to 
 
