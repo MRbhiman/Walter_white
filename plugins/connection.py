@@ -42,7 +42,7 @@ async def addconnection(client, message):
     except Exception as e:
         logger.exception(e)
         await message.reply_text(
-            "Invalid Group ID!\n\nIf correct, Nᴀ Uɴɢᴀ Gʀᴏᴜᴘ Lᴀ Eʀᴜᴋᴇɴ ɴᴀ • Cʜᴇᴄᴋ Pᴀɴɴᴜɴɢᴀ!!",
+            "Invalid Group ID!\n\nIf correct, അതിനു ഞാൻ നിങ്ങളുടെ ഗ്രൂപ്പിൽ ഉണ്ടോ... 🤔",
             quote=True,
         )
 
@@ -56,7 +56,7 @@ async def addconnection(client, message):
             addcon = await add_connection(str(group_id), str(userid))
             if addcon:
                 await message.reply_text(
-                    f"SᴜᴄᴄᴇssFᴜʟʟʏ Jᴏɪɴ Pᴀɴɴɪᴛᴇɴ Tᴏ **{title}**\nNow Mᴀɴᴀɢᴇ Uʀ Gʀᴏᴜᴘ Sᴇᴛᴛɪɴɢ Iɴ Mʏ Pᴍ!",
+                    f"SᴜᴄᴄᴇssFᴜʟʟʏ Jᴏɪɴed Tᴏ **{title}**\nNow Mᴀɴᴀɢᴇ Uʀ Gʀᴏᴜᴘ Sᴇᴛᴛɪɴɢ Iɴ Mʏ Pᴍ!",
                     quote=True,
                     parse_mode=enums.ParseMode.MARKDOWN
                 )
