@@ -1,4 +1,4 @@
-![Typing SVG](https://readme-typing-svg.herokuapp.com/?lines=𝗪𝗘𝗟𝗖𝗢𝗠𝗘+𝗧𝗢+𝗔𝗪𝗘𝗦𝗢𝗠𝗘+𝗙𝗜𝗟𝗧𝗘𝗥+𝗕𝗢𝗧+!!!!!;𝗖𝗥𝗘𝗔𝗧𝗘𝗗+𝗕𝗬+𝗧𝗔𝗠𝗜𝗟𝗔𝗡𝗕𝗢𝗧𝗦𝗭+𝗧𝗘𝗔𝗠+!!!!!;𝗠𝗔𝗗𝗘+𝗪𝗜𝗧𝗛+𝗧𝗔𝗠𝗜𝗟𝗔𝗡+𝗟𝗢𝗩𝗘+♥️+!!!!)</p>
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Bebas+Neue&size=45&duration=4000&pause=1000&color=840000&random=false&width=500&height=70&lines=i+am+not+in+danger!++;i+am+the+danger!)](https://git.io/typing-svg)</p>
 <p align="center">
   <img src="https://te.legra.ph/file/12d811d8bd6d19299f369.jpg" alt="Awesome Filter Logo">
   </p>
@@ -146,16 +146,8 @@ link - 🖇️ʟɪɴᴋ ᴛᴏ ᴘᴏsᴛ (ᴀᴅᴍɪɴ ᴏɴʟʏ)
 ```
 
 ## Credits 
-Repo Owner & Creator * [![TamilanBotsZ-Owner](https://img.shields.io/static/v1?label=TamilanBotsZ&message=devs&color=critical)](https://telegram.dog/Tamilan_BotsZ)
+ [![TamilanBotsZ-Owner](https://img.shields.io/static/v1?label=TamilanBotsZ&message=devs&color=critical)](https://telegram.dog/Tamilan_BotsZ)
 
-Promoted This Repo * [![Promoted This Repo](https://img.shields.io/static/v1?label=GreyMatters&message=devs&color=critical)](https://telegram.dog/Tamilan_BotsZ)
+ [![Promoted This Repo](https://img.shields.io/static/v1?label=GreyMatters&message=devs&color=critical)](https://telegram.dog/Tamilan_BotsZ)
 
 ## Thanks to 
- - Thanks To Me🤩
- - Thanks To Eva Marie Devs❣️
- - Thanks To Grey Matter's (For His Promotion) ❣️
- - Thanks To Our Repo User😇
-
-## Disclaimer
-
-Intha Repo Va Fork & Star Pannikalam But Import Panni Sell Panna Kudathu 😡
