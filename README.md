@@ -6,7 +6,7 @@
     
  <p>𝗪𝗮𝗹𝘁𝗲𝗿 𝗪𝗵𝗶𝘁𝗲</p>
   
-[![Static Badge](https://img.shields.io/badge/its%20me-Walter_White-brightgreen?style=flat-square&logo=rootme&logoColor=yellow&labelColor=black&color=yellow)](https://github.com/TamilanBotsZ/AwesomeFilter)   
+[![Static Badge](https://img.shields.io/badge/its%20me-Walter_White-brightgreen?style=flat-square&logo=rootme&logoColor=yellow&labelColor=black&color=yellow)](https://t.me/Bhiman22bot)   
    </h1>
 
 
@@ -47,7 +47,7 @@
 * `DATABASE_URI`: [mongoDB](https://www.mongodb.com) URI. Get this value from [mongoDB](https://www.mongodb.com). For more help [walter💛](https://t.me/mrbhiman44)
 * `DATABASE_NAME`: Name of the database in [mongoDB](https://www.mongodb.com). For more help [walter💛](https://t.me/mrbhiman44)
 * `LOG_CHANNEL` : A channel to log the activities of bot. Make sure bot is an admin in the channel.
-* Check [info.py](https://github.com/TamilanBotsz/AwesomeFilter/blob/master/info.py) for more variables
+* Check [info.py](https://github.com/MRbhiman/Walter_white/blob/Master/info.py) for more variables
 
 </a>
 </p>
